@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fff !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+@font-face {
+  font-family: "DarkerGrotesque-Black";
+  src: url(../font/DarkerGrotesque-Black.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Bold";
+  src: url(../font/DarkerGrotesque-Bold.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Extrabold";
+  src: url(../font/DarkerGrotesque-Extrabold.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Light";
+  src: url(../font/DarkerGrotesque-Light.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Medium";
+  src: url(../font/DarkerGrotesque-Medium.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Regular";
+  src: url(../font/DarkerGrotesque-Regular.ttf);
+}
+@font-face {
+  font-family: "DarkerGrotesque-Semibold";
+  src: url(../font/DarkerGrotesque-Semibold.ttf);
+}
