@@ -360,7 +360,7 @@ const ManageMent = () => {
             <MySwitch active={management} setActive={setManageMent} />
           </div>
 
-          <h2 className={`title  pb-3 ${!management && "active"}`}>Advisor</h2>
+          <h2 className={`title  pb-3 ${!management && "active"}`}>Advisory</h2>
         </div>
         <div className="d-none d-md-block ">
           <Slider {...settings}>
