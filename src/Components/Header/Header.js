@@ -138,7 +138,7 @@ const Header = () => {
       <div className="d-none d-md-block"
       >
         <Col xs={11} className="mx-auto d-flex justify-content-between ">
-          <img src="./images/logo.png" alt="#" />
+          <img width="120px" src="./images/SintryxLogoKleur.png" alt="#" />
           <div className="d-flex">
             <div
               className="d-flex drowdownContainer"
@@ -176,7 +176,7 @@ const Header = () => {
       <div className="sidebarContainer">
         {!sidebar && (
           <div className="d-flex d-md-none justify-content-between align-items-center">
-            <img src="./images/logo.png" alt="#" className="mobileLogo" />
+            <img width="80px" src="./images/SintryxLogoKleur.png" alt="#" className="mobileLogo" />
             <div
               className="three line-container "
               onClick={() => setSidebar(true)}

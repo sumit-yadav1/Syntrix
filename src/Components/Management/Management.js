@@ -396,7 +396,7 @@ const ManageMent = () => {
           </Slider>
         </div>
         <div className="d-md-none py-5 ">
-          <h2 className={`title  pb-3  active`}>Advisor</h2>
+          <h2 className={`title  pb-3  active`}>Advisory</h2>
           <Slider {...settings}>
             {advisorArray.map((el, i) => (
               <Col xs={12} className="px-xxl-4 px-2 " key={i}>
