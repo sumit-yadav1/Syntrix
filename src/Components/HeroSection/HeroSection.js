@@ -126,7 +126,7 @@ const Wrapper = styled.div`
 `;
 const HeroSection = () => {
   return (
-    <Wrapper>
+    <Wrapper style={{overflowX:'hidden'}}>
       <img src="./images/hero.png" alt="#" className="heroImage" />
       <Col xs={11} className="mx-auto myWrapper">
         <div className="heroText ">
