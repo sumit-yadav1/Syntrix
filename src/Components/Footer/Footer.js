@@ -62,6 +62,15 @@ const Footer = () => {
     "Terms & Conditions",
     "Privacy Policy",
   ];
+
+  const links = [
+    "./docs/onepager.pdf",
+    "./docs/pitch.pdf",
+    "./docs/litepaper.pdf",
+    "./docs/market-report.pdf",
+    "./docs/sintryx-website-terms&conditions.pdf",
+    "./docs/sintryx-privacy-statement.pdf",
+  ]
   const address = [
     "Amstelplein 54, 26th Floor",
     "1096 BC, Amsterdam",
@@ -119,7 +128,7 @@ const Footer = () => {
                   <p className="text pb-3">Resources</p>
                   {resources.map((el, i) => (
                     <p className="text py-1" key={i}>
-                      {el}
+                      <a href={links[i]} target="_blank" style={{color:"black"}}> {el} </a>
                     </p>
                   ))}
                 </div>
