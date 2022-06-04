@@ -68,11 +68,11 @@ const Footer = () => {
     "The Netherlands",
   ];
   const socialIcon = [
-    { icon: "./images/TWITTER.svg", to: "https://twitter.com/" },
-    { icon: "./images/TELEGRAM.svg", to: "https://twitter.com/" },
-    { icon: "./images/MEDIUM.svg", to: "https://twitter.com/" },
-    { icon: "./images/FB.svg", to: "https://twitter.com/" },
-    { icon: "./images/MEDIUM.svg", to: "https://twitter.com/" },
+    { icon: "./images/TWITTER.svg", to: "http://twitter.com/sintryxofficial" },
+    { icon: "./images/TELEGRAM.svg", to: "https://t.me/SintryxCommunity" },
+    { icon: "./images/MEDIUM.svg", to: "https://medium.com/@Sintryx" },
+    { icon: "./images/FB.svg", to: "https://m.facebook.com/Sintryx-111331574689872" },
+    { icon: "./images/INSTA.svg", to: "https://instagram.com/sintryxofficial?igshid=YmMyMTA2M2Y=" },
   ];
   return (
     <Wrapper>
