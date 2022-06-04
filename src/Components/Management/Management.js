@@ -266,48 +266,29 @@ const ManageMent = () => {
     {
       image: "./images/DANIEL.svg",
       name: "Daniel Verweij",
-      position: "Head of Investments",
+      position: "Advisor",
     },
     {
-      image: "./images/CHRISTIAAN.png",
-      name: "Christiaan Kok",
-      position: "CEO",
+      image: "./images/JESS_MUNTENAAR.svg",
+      name: "Jess Muntenaar",
+      position: "Advisor",
     },
     {
-      image: "./images/NIGEL.png ",
+      image: "./images/NIGEL_VD_LAAN.svg ",
       name: "Nigel van der Laan",
-      position: "CTO",
+      position: "Advisor",
     },
     {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
-      position: "Head of Investments",
+      image: "./images/NICK_FRIEDRICH.svg",
+      name: "Nick Friedrich",
+      position: "Advisor",
     },
     {
-      image: "./images/CHRISTIAAN.png",
-      name: "Christiaan Kok",
-      position: "CEO",
+      image: "./images/ELLIOT_HAGEMEIJER.svg",
+      name: "Elliot Hagemeijer",
+      position: "Advisor",
     },
-    {
-      image: "./images/NIGEL.png ",
-      name: "Nigel van der Laan",
-      position: "CTO",
-    },
-    {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
-      position: "Head of Investments",
-    },
-    {
-      image: "./images/CHRISTIAAN.png",
-      name: "Christiaan Kok",
-      position: "CEO",
-    },
-    {
-      image: "./images/NIGEL.png ",
-      name: "Nigel van der Laan",
-      position: "CTO",
-    },
+    
   ];
   const settings = {
     dots: false,
