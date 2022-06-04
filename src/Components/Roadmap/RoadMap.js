@@ -185,13 +185,12 @@ function SamplePrevArrow(props) {
 const RoadMap = () => {
   const data = [
     {
-      title: "Q3 2022",
+      title: "Q2 2022",
       list: [
         "Smart contract development",
         "Security evaluation",
         "Finalization of Dashboard Intelligence",
         "Metaverse / NFT Marketplace",
-        "Launch native Token $TRYX",
       ],
     },
     {
@@ -200,6 +199,8 @@ const RoadMap = () => {
         "Metaverse NFT Gallery",
         "Decentralized Exchange",
         "Marketing Campaign",
+        "Launch native Token $TRYX",
+
       ],
     },
     {
@@ -210,13 +211,12 @@ const RoadMap = () => {
       ],
     },
     {
-      title: "Q3 2022",
+      title: "Q2 2022",
       list: [
         "Smart contract development",
         "Security evaluation",
         "Finalization of Dashboard Intelligence",
         "Metaverse / NFT Marketplace",
-        "Launch native Token $TRYX",
       ],
     },
     {
@@ -225,6 +225,8 @@ const RoadMap = () => {
         "Metaverse NFT Gallery",
         "Decentralized Exchange",
         "Marketing Campaign",
+        "Launch native Token $TRYX",
+
       ],
     },
     {
