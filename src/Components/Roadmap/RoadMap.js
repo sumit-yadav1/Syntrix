@@ -185,7 +185,7 @@ function SamplePrevArrow(props) {
 const RoadMap = () => {
   const data = [
     {
-      title: "Q2 2022",
+      title: "Q3 2022",
       list: [
         "Smart contract development",
         "Security evaluation",
@@ -210,7 +210,7 @@ const RoadMap = () => {
       ],
     },
     {
-      title: "Q2 2022",
+      title: "Q3 2022",
       list: [
         "Smart contract development",
         "Security evaluation",

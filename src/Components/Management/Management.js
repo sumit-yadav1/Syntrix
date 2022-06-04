@@ -263,21 +263,13 @@ const ManageMent = () => {
     },
   ];
   const advisorArray = [
-    {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
-      position: "Advisor",
-    },
+   
     {
       image: "./images/JESS_MUNTENAAR.svg",
       name: "Jess Muntenaar",
       position: "Advisor",
     },
-    {
-      image: "./images/NIGEL_VD_LAAN.svg ",
-      name: "Nigel van der Laan",
-      position: "Advisor",
-    },
+    
     {
       image: "./images/NICK_FRIEDRICH.svg",
       name: "Nick Friedrich",
