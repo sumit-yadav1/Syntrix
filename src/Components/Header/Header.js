@@ -150,9 +150,8 @@ const Header = () => {
               </span>
               {dropdown && (
                 <div className="dropdown">
-                  <span className="text pt-3">aasdfa</span>
-                  <span className="text pt-3">aasdfa</span>
-                  <span className="text pt-3">sddddddddd</span>
+                  <span className="text pt-3"><a href="./docs/litepaper.pdf" target="_blank">LitePaper</a></span>
+                  <span className="text pt-3"><a href="./docs/onepager.pdf" target="_blank">OnePager</a></span>
                 </div>
               )}
             </div>
