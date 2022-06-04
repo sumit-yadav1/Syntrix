@@ -179,49 +179,29 @@ function SamplePrevArrow(props) {
 const SyntrisPlatform = () => {
   const data = [
     {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
+      text: 'Our unique approach is characterized by two components: a consensus mechanism and an allocation algorithm. Once the threshold is reached after enough votes, consensus is reached for the project to be financed by the market. Depending on the amount of Sintryx tokens that investors keep in their non-custodial wallet, fees will be lower and rewards higher. Control of the investment lies with the investor and is supported by the Sintryx ecosystem.' 
+      ,
       list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
       ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
+          image: "./images/Technology.svg",
     },
     {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
+      text: "The importance of Custodians",
       list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
+       
       ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
+      image: "./images/LicensedLiquidityPool.svg",
     },
     {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
+      text: "The Sintryx Platform has a decentralized approach for approving listing applications on the Marketplace. Owners are bound to receive funding from Investors through a reflective pre-voting initiation in exchange for rendering automatic listing exposure enacted through 2% allocation of the total investment users elect to invest in pre-listed Items or Tools. When the listing specific threshold of pre-votes through allocation of Sintryx tokens has been reached Owners can petition to receive funding for the offered Item or Tool. In return, Investors are able to invest the remaining 98% in the pre-voted listing. The clear advantage of Sintryx’s Market Consensus System is that the market and the listing have a direct relationship that dynamically reflects supply and demand. ",
       list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
+        
       ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
+      
+      image: "./images/MarketConsensusSystem.svg",
     },
     {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
+      text: '',
       list: [
         "Decentralized Exchange",
         "NFT Marketplace ",
@@ -229,53 +209,9 @@ const SyntrisPlatform = () => {
         "Venture Capital & Real Estate Investments ",
         "Fractionalised yields",
       ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
+      image: "./images/FeeDistribution.svg",
     },
-    {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
-      list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
-      ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
-    },
-    {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
-      list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
-      ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
-    },
-    {
-      text: "Sintryx  is the world’s first Solana based CeDeFi platform that decreases the  distance between market participants and simultaneously brings liquidity to the secondary trading for traditional cryptocurrencies, STOs, and fractionalised  shares in metaverse/NFT assets, venture capital and real estate. ",
-      list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
-      ],
-      bottomImage: "./images/tryx.png",
-      bottomText:
-        "Our native token $TRYX will be launched for LP-rewards, multichain fractionalised investment opportunities, and secondary market trading on various exchanges strengthening market participation.",
-      image: "./images/platform.png",
-    },
+    
   ];
 
   const settings = {
@@ -306,8 +242,7 @@ const SyntrisPlatform = () => {
                     ))}
                   </ul>
                   <div className="d-md-flex align-items-center d-none ">
-                    <img src={el.bottomImage} alt="#" />
-                    <p className="text px-3">{el.bottomText}</p>
+                   
                   </div>
                 </Col>
                 <Col
