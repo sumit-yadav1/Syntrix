@@ -128,7 +128,7 @@ const Footer = () => {
                   <p className="text pb-3">Resources</p>
                   {resources.map((el, i) => (
                     <p className="text py-1" key={i}>
-                      <a href={links[i]} target="_blank" style={{color:"black"}}> {el} </a>
+                      <a href={links[i]} target="_blank" rel="noreferrer" style={{color:"black"}}> {el} </a>
                     </p>
                   ))}
                 </div>
