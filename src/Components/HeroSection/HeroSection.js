@@ -145,7 +145,7 @@ const HeroSection = () => {
               href="#/"
               className="button read-docs d-flex align-items-center justify-content-center"
             >
-              <span> <a href="./docs/onepager.pdf" target="_blank" style={{color:"black"}}>READ DOCS</a></span>
+              <span> <a href="./docs/onepager.pdf" target="_blank" style={{color:"black"}} rel="noreferrer">READ DOCS</a></span>
               <BsArrowRightShort className="mt-1" />
             </a>
             <a
