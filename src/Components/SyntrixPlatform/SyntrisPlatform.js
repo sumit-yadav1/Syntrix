@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   .main {
     border: 1px solid #000000;
     padding: 24px;
+    border-radius: 10px;
   }
   .title {
     font-family: "DarkerGrotesque-Bold";
@@ -33,12 +34,22 @@ const Wrapper = styled.div`
     bottom: -60px;
   }
   .slick-dots li button::before {
-    font-size: 8px;
+    font-size: 16px;
+    color: transparent;
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
   }
   .slick-dots li.slick-active button::before {
     color: #000;
     opacity: 1;
-    font-size: 8px;
+    font-size: 16px;
+    color: transparent;
+    border-radius: 50%;
+    border: 4px solid black;
+    background: black;
   }
   .slick-arrow::before {
     display: none;
@@ -179,29 +190,23 @@ function SamplePrevArrow(props) {
 const SyntrisPlatform = () => {
   const data = [
     {
-      text: 'Our unique approach is characterized by two components: a consensus mechanism and an allocation algorithm. Once the threshold is reached after enough votes, consensus is reached for the project to be financed by the market. Depending on the amount of Sintryx tokens that investors keep in their non-custodial wallet, fees will be lower and rewards higher. Control of the investment lies with the investor and is supported by the Sintryx ecosystem.' 
-      ,
-      list: [
-      ],
-          image: "./images/Technology.svg",
+      text: "Our unique approach is characterized by two components: a consensus mechanism and an allocation algorithm. Once the threshold is reached after enough votes, consensus is reached for the project to be financed by the market. Depending on the amount of Sintryx tokens that investors keep in their non-custodial wallet, fees will be lower and rewards higher. Control of the investment lies with the investor and is supported by the Sintryx ecosystem.",
+      list: [],
+      image: "./images/Technology.svg",
     },
     {
       text: "The importance of Custodians",
-      list: [
-       
-      ],
+      list: [],
       image: "./images/LicensedLiquidityPool.svg",
     },
     {
       text: "The Sintryx Platform has a decentralized approach for approving listing applications on the Marketplace. Owners are bound to receive funding from Investors through a reflective pre-voting initiation in exchange for rendering automatic listing exposure enacted through 2% allocation of the total investment users elect to invest in pre-listed Items or Tools. When the listing specific threshold of pre-votes through allocation of Sintryx tokens has been reached Owners can petition to receive funding for the offered Item or Tool. In return, Investors are able to invest the remaining 98% in the pre-voted listing. The clear advantage of Sintryx’s Market Consensus System is that the market and the listing have a direct relationship that dynamically reflects supply and demand. ",
-      list: [
-        
-      ],
-      
+      list: [],
+
       image: "./images/MarketConsensusSystem.svg",
     },
     {
-      text: '',
+      text: "",
       list: [
         "Decentralized Exchange",
         "NFT Marketplace ",
@@ -211,7 +216,6 @@ const SyntrisPlatform = () => {
       ],
       image: "./images/FeeDistribution.svg",
     },
-    
   ];
 
   const settings = {
@@ -241,9 +245,7 @@ const SyntrisPlatform = () => {
                       <li key={i}> {element}</li>
                     ))}
                   </ul>
-                  <div className="d-md-flex align-items-center d-none ">
-                   
-                  </div>
+                  <div className="d-md-flex align-items-center d-none "></div>
                 </Col>
                 <Col
                   sm={8}
