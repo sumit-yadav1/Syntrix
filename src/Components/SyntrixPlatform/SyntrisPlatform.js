@@ -5,13 +5,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import { useRef } from "react";
 
 const Wrapper = styled.div`
   .main {
     border: 1px solid #000000;
     padding: 24px;
     border-radius: 10px;
+    position: relative;
   }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    font-family: "DarkerGrotesque-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
+    width: 80%;
+  }
+
   .title {
     font-family: "DarkerGrotesque-Bold";
     font-style: normal;
@@ -19,6 +36,14 @@ const Wrapper = styled.div`
     font-size: 56px;
     line-height: 140%;
     color: #000000;
+  }
+
+  .purple {
+    color: #7262d2;
+  }
+
+  .pink {
+    color: #f88d93;
   }
   .text {
     font-family: "DarkerGrotesque-Regular";
@@ -54,6 +79,16 @@ const Wrapper = styled.div`
   .slick-arrow::before {
     display: none;
   }
+
+  .slick-track {
+    gap: 20px;
+    display: flex;
+  }
+
+  .carousel-container {
+    height: 600px;
+  }
+
   .slick-next {
     right: -11%;
   }
@@ -190,29 +225,31 @@ function SamplePrevArrow(props) {
 const SyntrisPlatform = () => {
   const data = [
     {
+      title: "Technology",
       text: "Our unique approach is characterized by two components: a consensus mechanism and an allocation algorithm. Once the threshold is reached after enough votes, consensus is reached for the project to be financed by the market. Depending on the amount of Sintryx tokens that investors keep in their non-custodial wallet, fees will be lower and rewards higher. Control of the investment lies with the investor and is supported by the Sintryx ecosystem.",
       list: [],
       image: "./images/Technology.svg",
     },
     {
+      title: "Market Consensus System",
+      text: "The Sintryx Platform has a decentralized approach for approving listing applications on the Marketplace. Owners are bound to receive funding from Investors through a reflective pre-voting initiation in exchange for rendering automatic listing exposure enacted through 2% allocation of the total investment users elect to invest in pre-listed Items or Tools. When the listing specific threshold of pre-votes through allocation of Sintryx tokens has been reached Owners can petition to receive funding for the offered Item or Tool. In return, Investors are able to invest the remaining 98% in the pre-voted listing. The clear advantage of Sintryx’s Market Consensus System is that the market and the listing have a direct relationship that dynamically reflects supply and demand. ",
+      list: [],
+      image: "./images/MarketConsensusSystem.svg",
+    },
+    {
+      title: "Licensed Liquidity Pool",
       text: "The importance of Custodians",
       list: [],
       image: "./images/LicensedLiquidityPool.svg",
     },
-    {
-      text: "The Sintryx Platform has a decentralized approach for approving listing applications on the Marketplace. Owners are bound to receive funding from Investors through a reflective pre-voting initiation in exchange for rendering automatic listing exposure enacted through 2% allocation of the total investment users elect to invest in pre-listed Items or Tools. When the listing specific threshold of pre-votes through allocation of Sintryx tokens has been reached Owners can petition to receive funding for the offered Item or Tool. In return, Investors are able to invest the remaining 98% in the pre-voted listing. The clear advantage of Sintryx’s Market Consensus System is that the market and the listing have a direct relationship that dynamically reflects supply and demand. ",
-      list: [],
 
-      image: "./images/MarketConsensusSystem.svg",
-    },
     {
+      title: "Fee Distribution",
       text: "",
       list: [
-        "Decentralized Exchange",
-        "NFT Marketplace ",
-        "Custodial Licensed Liquidity Pools ",
-        "Venture Capital & Real Estate Investments ",
-        "Fractionalised yields",
+        "10% of the transaction fees is directly burned to adopt to builtin deflationary economics of the $TRYX token",
+        "10% of the transaction fees is directly committed to the Impermanent Loss Coverage Vault",
+        "10% of the governance fees is directly committed to the Impermanent Loss Coverage Vault ",
       ],
       image: "./images/FeeDistribution.svg",
     },
@@ -230,38 +267,62 @@ const SyntrisPlatform = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+
   return (
     <Wrapper className="py-5" id="team" data-aos="fade-up">
       <Col xs={11} md={10} xxl={9} className="mx-auto">
-        <h2 className="title py-5 pb-4">Sintryx Platform</h2>
-        <div className="main">
-          <Slider {...settings}>
-            {data.map((el, i) => (
-              <Row className="d-flex align-items-center" key={i}>
-                <Col md={7} className=" mx-auto">
-                  <p className="text">{el.text}</p>
-                  <ul className=" text list-container py-4">
-                    {el.list.map((element, i) => (
-                      <li key={i}> {element}</li>
-                    ))}
-                  </ul>
-                  <div className="d-md-flex align-items-center d-none "></div>
-                </Col>
-                <Col
-                  sm={8}
-                  md={5}
-                  className="d-flex flex-column flex-md-row justify-content-md-end mx-auto mt-5 mt-md-0"
-                >
-                  <img src={el.image} alt="#" className="image" />
-                  <div className="d-flex flex-column align-items-start d-md-none">
-                    <img src={el.bottomImage} alt="#" />
-                    <p className="text px-3">{el.bottomText}</p>
-                  </div>
-                </Col>
-              </Row>
-            ))}
-          </Slider>
-        </div>
+        <Slider {...settings}>
+          {data.map((el, i) => (
+            <>
+              <h2 className="title py-5 pb-4 ">{el.title}</h2>
+              <div className="main ">
+                <Row className="carousel-container align-items-center" key={i}>
+                  <Col md={7} className=" mx-auto">
+                    <p className="text">{el.text}</p>
+                    <ul className="  list-container py-4">
+                      {el.list.length > 0 && (
+                        <>
+                          <li>
+                            10% of the{" "}
+                            <span class="purple">transaction fees</span> is
+                            directly <span class="pink">burned</span> to adopt
+                            to builtin deflationary economics of the $TRYX token
+                          </li>
+                          <li>
+                            10% of the{" "}
+                            <span class="purple">transaction fees</span> is
+                            directly committed to the Impermanent Loss Coverage
+                            Vault
+                          </li>
+                          <li>
+                            10% of the{" "}
+                            <span class="purple">governance fees</span> is
+                            directly committed to the{" "}
+                            <span class="pink">
+                              Impermanent Loss Coverage Vault
+                            </span>
+                          </li>
+                        </>
+                      )}
+                    </ul>
+                    <div className="d-md-flex align-items-center d-none "></div>
+                  </Col>
+                  <Col
+                    sm={8}
+                    md={5}
+                    className="d-flex flex-column flex-md-row justify-content-md-end mx-auto mt-5 mt-md-0"
+                  >
+                    <img src={el.image} alt="#" className="image" />
+                    <div className="d-flex flex-column align-items-start d-md-none">
+                      <img src={el.bottomImage} alt="#" />
+                      <p className="text px-3">{el.bottomText}</p>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </>
+          ))}
+        </Slider>
       </Col>
     </Wrapper>
   );
