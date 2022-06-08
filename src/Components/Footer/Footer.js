@@ -151,7 +151,7 @@ const Footer = () => {
                 <div>
                   <div className="inputContainer d-flex align-items-center ">
                     <div style={{ width: "70%" }}>
-                      <p className="text">Get Our Update</p>
+                      <p style={{fontWeight:800}}className="text">Get Our Updates</p>
                       <input
                         type="text"
                         className="input"
