@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   }
   .button {
     display: block;
-    padding: 8px 16px;
+    padding: 24px 66px;
     border: 1px solid;
     background: #ffffff;
     border: 1px solid #000000;
@@ -55,6 +55,12 @@ const Wrapper = styled.div`
     line-height: 100%;
     color: #000000;
     text-decoration: none;
+    @media only screen and (max-width: 1536px) {
+      padding: 20px 60px;
+    }
+    @media only screen and (max-width: 1280px) {
+      padding: 15px 40px;
+    }
   }
   .read-docs {
     margin-right: 10px;
@@ -126,34 +132,44 @@ const Wrapper = styled.div`
 `;
 const HeroSection = () => {
   return (
-    <Wrapper style={{overflowX:'hidden'}}>
+    <Wrapper style={{ overflowX: "hidden" }}>
       <img src="./images/hero.png" alt="#" className="heroImage" />
       <Col xs={11} className="mx-auto myWrapper">
         <div className="heroText ">
           <h2 className="title">
-            Empowering investors across the full spectrum of investable digital
-            and real-world assets
+            The Sintryx Platform is a world-class <br /> NFT aggregator.
           </h2>
           <div className="text">
-            Sintryx provides full exertion of state-of-the-art approaches for an
-            almost <br /> infinite amount of, and ever changing, supply and
-            demand infrastructure, <br /> while simultaneously incrementally
-            rewarding participants.{" "}
+            Sintryx NFT is a world-class NFT aggregator, that lists NFTs across
+            multiple platforms for sale <br /> Our platform is the easiest
+            gateway for NFT enthusiasts to trade a wide array of digital assets{" "}
+            <br /> on a unified interface with no need to switch between
+            marketplaces.{" "}
           </div>
           <div className="d-flex  align-items-center ">
             <a
               href="#/"
-              className="button read-docs d-flex align-items-center justify-content-center"
+              className="button read-docs d-flex align-items-center justify-content-center gap-3"
             >
-              <span> <a href="./docs/onepager.pdf" target="_blank" style={{color:"black"}} rel="noreferrer">READ DOCS</a></span>
-              <BsArrowRightShort className="mt-1" />
+              <span>
+                {" "}
+                <a
+                  href="./docs/onepager.pdf"
+                  target="_blank"
+                  style={{ color: "black" }}
+                  rel="noreferrer"
+                >
+                  READ DOCS
+                </a>
+              </span>
+              <BsArrowRightShort className="mt-1 fs-2" />
             </a>
             <a
               href="#/"
-              className="button d-flex align-items-center justify-content-center active"
+              className="button d-flex align-items-center justify-content-center active gap-3"
             >
               <span> OPEN APP</span>
-              <BsArrowRightShort className="mt-1" />
+              <BsArrowRightShort className="mt-1 fs-2" />
             </a>
           </div>
         </div>
@@ -170,7 +186,7 @@ const HeroSection = () => {
           infrastructure, <br /> while simultaneously incrementally rewarding
           participants.{" "}
         </div>
-        <div className="d-flex align-items-center justify-content-center justify-content-md-start  ">
+        <div className="d-flex align-items-center justify-content-center justify-content-md-start">
           <a
             href="#/"
             className="button read-docs d-flex align-items-center justify-content-center"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   }
   .image {
     width: 180px;
+    border-radius: 100%;
   }
   .title {
     font-family: "DarkerGrotesque-Bold";
@@ -24,7 +25,6 @@ const Wrapper = styled.div`
     font-weight: 400;
     font-size: 56px;
     line-height: 120%;
-
     color: rgba(0, 0, 0, 0.3);
   }
   .active {
@@ -222,54 +222,78 @@ const ManageMent = () => {
       position: "CEO",
     },
     {
-      image: "./images/NIGEL.png ",
-      name: "Nigel van der Laan",
-      position: "CTO",
+      image: "./images/David.svg",
+      name: "David Meurs",
+      position: "Designer",
     },
     {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
+      image: "./images/Aditya.svg",
+      name: "Aditya",
       position: "Head of Investments",
     },
     {
-      image: "./images/CHRISTIAAN.png",
-      name: "Christiaan Kok",
-      position: "CEO",
+      image: "./images/Mona.svg",
+      name: "Mona",
+      position: "Project Coordinator",
     },
     {
-      image: "./images/NIGEL.png ",
-      name: "Nigel van der Laan",
-      position: "CTO",
+      image: "./images/Adam.png",
+      name: "Adam",
+      position: "QA Lead",
     },
     {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
-      position: "Head of Investments",
+      image: "./images/Victor.svg",
+      name: "Victor",
+      position: "Lead Developer",
     },
     {
-      image: "./images/CHRISTIAAN.png",
-      name: "Christiaan Kok",
-      position: "CEO",
+      image: "./images/Alan.svg",
+      name: "Alan",
+      position: "Lead Developer",
     },
     {
-      image: "./images/NIGEL.png ",
-      name: "Nigel van der Laan",
-      position: "CTO",
+      image: "./images/Priya.svg",
+      name: "Priya",
+      position: "Lead Developer",
     },
     {
-      image: "./images/DANIEL.svg",
-      name: "Daniel Verweij",
-      position: "Head of Investments",
+      image: "./images/Brian.svg ",
+      name: "Brian",
+      position: "Lead UI/UX Designer",
+    },
+    {
+      image: "./images/Maaz.svg",
+      name: "Maaz",
+      position: "Sr. Software Developer",
+    },
+    {
+      image: "./images/Harry.jpg",
+      name: "Harry",
+      position: "Sr. Software Developer",
+    },
+    {
+      image: "./images/Sam.svg",
+      name: "Sam",
+      position: "Sr. UI/UX Designer",
+    },
+    {
+      image: "./images/Chris.svg",
+      name: "Chris",
+      position: "Sr. Software Developer",
+    },
+    {
+      image: "./images/BenPowell.svg",
+      name: "Ben Powell",
+      position: "Sr. Software Tester",
     },
   ];
   const advisorArray = [
-   
     {
       image: "./images/JESS_MUNTENAAR.svg",
       name: "Jess Muntenaar",
       position: "Advisor",
     },
-    
+
     {
       image: "./images/NICK_FRIEDRICH.svg",
       name: "Nick Friedrich",
@@ -280,7 +304,6 @@ const ManageMent = () => {
       name: "Elliot Hagemeijer",
       position: "Advisor",
     },
-    
   ];
   const settings = {
     dots: false,

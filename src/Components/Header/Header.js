@@ -34,6 +34,10 @@ const Wrapper = styled.div`
     display: flex;
     gap: 40px;
     margin-right: 170px;
+    @media only screen and (min-width: 1536px) {
+      margin-right: 240px;
+      gap: 80px;
+    }
   }
 
   .logo {
@@ -57,7 +61,7 @@ const Wrapper = styled.div`
     font-family: "DarkerGrotesque-Medium";
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.563rem;
     line-height: 150%;
     color: #2c3c5b;
     cursor: pointer;
@@ -89,6 +93,10 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 4px;
     display: flex;
+    .down {
+      padding-top: 4px;
+      font-size: 1.5rem;
+    }
   }
 
   .drowdownContainerMobile {
@@ -194,6 +202,9 @@ const ButtonMenu = styled.div`
   svg {
     width: 30px;
     height: 24px;
+  }
+  @media only screen and (min-width: 1536px) {
+    padding: 0 70px;
   }
 `;
 
@@ -362,7 +373,7 @@ const Header = () => {
               />
               <div className="menu-container">
                 <div
-                  className="d-flex drowdownContainer"
+                  className="d-flex drowdownContainer align-items-center"
                   onClick={() => setDropdown((prev) => !prev)}
                 >
                   <span className="navItem">Docs</span>

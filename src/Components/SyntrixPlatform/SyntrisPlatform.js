@@ -9,6 +9,7 @@ import { useRef } from "react";
 
 const Wrapper = styled.div`
   .main {
+    background: #fff;
     border: 1px solid #000000;
     padding: 24px;
     border-radius: 10px;

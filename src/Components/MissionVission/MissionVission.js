@@ -5,6 +5,7 @@ import MySwitch from "../SwitchButton/SwitchButton";
 const Wrapper = styled.div`
   padding: 45px 0;
   .wrapper {
+    background: #fff;
     border: 1px solid #000000;
     padding: 24px;
     border-radius: 8px;

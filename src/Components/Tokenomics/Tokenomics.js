@@ -69,11 +69,12 @@ const Tokenomics = () => {
               <div className="d-flex justify-content-start">
                 <a
                   href="./docs/onepager.pdf"
-                  target="_blank" style={{color:"black"}}
+                  target="_blank"
+                  style={{ color: "black" }}
                   rel="noreferrer"
                   className="button read-docs d-flex align-items-center justify-content-center"
                 >
-                  <span> DOWNLOAD TOKENOMICS</span>
+                  <span style={{ color: "#fff" }}>DOWNLOAD TOKENOMICS</span>
                 </a>
               </div>
             </div>
